@@ -2,11 +2,11 @@
   "name": "publy-types-exam",
   "license": "MIT",
   "version": "0.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/**/*.js",
+  "module": "dist/**/*.mjs",
+  "types": "dist/**/*.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup src --format cjs,esm --dts",
     "lint": "tsc"
   },
   "devDependencies": {
